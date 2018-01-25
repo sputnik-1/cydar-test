@@ -1,0 +1,7 @@
+This is the technical test for the Operations Support Engineer role at cydar.co.uk
+
+KA-ROBERTS_Cydar-OSE-technical-test.pdf - main documentation file
+README - this file
+check-server.sh - script to check the server is responding OK
+create-nginx-server.sh - script to install Nginx
+remove-nginx-server.sh - script to remove Nginx
