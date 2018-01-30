@@ -81,6 +81,7 @@ if [ "$DOWNLOADED_VERSION_NUMBER" == "$EXPECTED_VERSION_NUMBER" ]; then
     echo "The version numbers are identical."
     echo "The server is running OK."
     echo
+    echo "Press [CTRL+C] to exit program..."
 
 else
     # here we can create alerts about possible server issues like:
@@ -90,9 +91,13 @@ else
 
     echo "There may be problems with the server."
     echo
-fi
 
-echo "Press [CTRL+C] to exit program..."
+    # play a pre-recorded alert message
+    aplay server-audio-warning.wav
+    echo
+    echo "Press [CTRL+C] twice to exit program..."
+
+fi
 
 # wait for x number of seconds
 sleep $WAIT_TIME
